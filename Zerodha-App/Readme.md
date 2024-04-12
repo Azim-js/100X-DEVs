@@ -1,6 +1,7 @@
 # HTML TAGS
 
-``` 1. <html>
+```
+1. <html>
 2. <head>
 3. <title>
 4. <body>
