@@ -13,4 +13,15 @@
 10. input
 11. <button>
 12. <b> <i>
-13. <center> ```
+13. <center> 
+```
+
+# Common styling attributes
+
+```
+1. color
+2. background
+3. border-radius
+4. border
+5. padding / margin
+6. box-shadow ```
