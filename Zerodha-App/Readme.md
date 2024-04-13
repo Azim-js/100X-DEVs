@@ -26,3 +26,8 @@
 5. padding / margin
 6. box-shadow 
 ```
+
+# Jargon
+
+```
+1. Flex box (display: flex)
