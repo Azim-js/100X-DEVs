@@ -10,3 +10,4 @@ console.log(sum);
 
 //  1. cpu usage , wierd answer (htop dosent work , top is the correct command)
 
+// no retuen value gives undefined  bounty 2

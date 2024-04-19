@@ -212,3 +212,6 @@ function greetAlien(){
 }
 
 setInterval(greetAlien,1*1000) // every one second
+
+//  synchronous vs Asynchronous fucntions
+
