@@ -215,3 +215,17 @@ setInterval(greetAlien,1*1000) // every one second
 
 //  synchronous vs Asynchronous fucntions
 
+const user = {
+    name: "azim",
+    age: 24,
+    address:{
+        houseNumber: "11",
+        street: 1
+    }
+}
+
+console.log(user["address"]["houseNumber"])
+
+const address = user.address
+
+const houseNumber = address.houseNumber
