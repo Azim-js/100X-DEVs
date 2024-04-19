@@ -54,3 +54,21 @@ Functions let you
 3. Return a value as an output
 4. You can think of them as an independent program that is supposed to do something
  given an input 
+
+
+# Synchronous 
+
+All the code we’ve written until now
+All code running line by line (hence sync)
+
+
+# Asynchronous
+Asynchronous functions in programming are those
+that allow a program to start a potentially longrunning operation and continue executing other
+tasks without waiting for that operation to
+complete. This is particularly important in
+environments like web browsers or Node.js, where
+waiting for an operation to finish (like fetching
+data from a server or reading a large file) could
+make the application unresponsive.
+
