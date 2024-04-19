@@ -62,6 +62,21 @@ for(let i=0;i<countOfNumbers;i++)
 }
 
 console.log(largest);
+
+// reverse of elements 
+
+elements=[23,"Azim",453,"Rian"]
+
+revElements=[]
+
+for(let i=elements.length-1;i>=0;i--){
+    revElements.push(elements[i])
+}
+console.log("revese array is : ", revElements)
+
+
+
+
 // arrays example
 
 const personArray = ["Azim", "rian","hari"];
@@ -84,6 +99,7 @@ const users1={
 }
 
 console.log(users1["gender"]); // to access the object
+console.log(users1.gender)
 
 const users =  [1,2,3]
 
@@ -107,4 +123,25 @@ for(let i=0; i<allUsers.length;i++){
     if(allUsers[i]["gender"]=="female"){
         console.log(allUsers[i]["firstName"])
     }
+ }
+
+
+ console.log("------------functions---------------------")
+
+//  Functions out logic in your program 
+
+//  write a function to find sum of two numbers 
+
+function findSum(a,b){
+    const sumValue=a+b;
+    return sumValue;
 }
+
+const value = findSum(1,2);
+const value2=findSum(1,15);
+
+console.log(value);
+
+
+
+// write another function that displays this result in pretty format 
