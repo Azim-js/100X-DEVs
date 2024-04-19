@@ -9,3 +9,4 @@ console.log(sum);
 // why node dosent uses the 100 % of cpu 
 
 //  1. cpu usage , wierd answer (htop dosent work , top is the correct command)
+

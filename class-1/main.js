@@ -145,3 +145,70 @@ console.log(value);
 
 
 // write another function that displays this result in pretty format 
+
+function sum(num1, num2, fnToCall){
+    let result = num1+num2;
+    fnToCall(result);
+}
+
+function displayResult(data){
+    console.log("Result of the sum is : "+ data);
+}
+
+function displayResultPassive(data){
+    console.log("Sum's result is: "+ data);
+}
+
+// You are only allowed to call one function to call one function after this 
+// How will you displayResult of sum
+
+// callbacks 
+
+const ans = sum(1,2,displayResult);
+
+
+//  function calculate Arthimetic 
+
+function calculateArthimetic(a,b,arithmeticFunction){
+    // if(type == "sum"){
+    //     const value= sum(a,b);
+    //     return value;
+    // }
+    // if(type == "minus"){
+    //     const value=sub(a,b);
+    //     return value;
+    // }
+    const ans= arithmeticFunction(a,b);
+    return ans;
+}
+
+function sum(a,b){
+    return a+b;
+}
+
+function sub(a,b){
+    return a-b;
+}
+
+const ans1= calculateArthimetic(3,1,sub)
+console.log(ans1)
+
+
+// function to greet
+
+function greet(){
+    console.log("hello world");
+}
+
+// set time out 
+
+setTimeout(greet,3*1000) //(function, seconds ) call a function with seconds 
+
+
+// function to greet an Alien
+
+function greetAlien(){
+    console.log("Hello Alien ");
+}
+
+setInterval(greetAlien,1*1000) // every one second
