@@ -14,3 +14,19 @@ for (let i=0; i<1000000; i++){
 }
 
 console.log("hi there 2");
+
+// ugly way of async without promises
+
+function azimReadFile(cb){
+    fs.readFile("example.txt", "utf-8", function(err,data){
+        cb(data);
+    });
+}
+
+// callback function to call
+
+function onDone(data){
+    console.log(data);
+}
+
+azimReadFile(onDone)
