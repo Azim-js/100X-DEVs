@@ -70,10 +70,12 @@ complete. This is particularly important in
 environments like web browsers or Node.js, where
 waiting for an operation to finish (like fetching
 data from a server or reading a large file) could
-make the application unresponsive.
+make the application unresponsive.  
 
 # Async functions vs sync functions, real use of callbacks
 JS Browser architecture
 Promises
 Async await
+
+
 
