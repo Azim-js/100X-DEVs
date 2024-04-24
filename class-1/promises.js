@@ -1,6 +1,7 @@
 // pretty code
 
 const fs = require('fs');
+const { promiseHooks } = require('v8');
 
 //  my own asynchronous function 
 
@@ -28,3 +29,29 @@ var a = azimsReadFile()
 console.log(a)
 // need to use .then
 a.then(onDone)
+
+//  prmosie class
+
+// var p = new Promise();
+
+var d = new Promise(function(resolve){
+    setTimeout(function(){
+        resolve("foo")
+    },1000)
+    // resolve("foo");
+
+});
+
+function callback(){
+    console.log(d);
+}
+
+d.then(callback)
+ 
+// promise has three states 
+// 1. Pending 
+// 2. resolved
+// 3. rejected
+
+
+
