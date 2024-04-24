@@ -1,3 +1,5 @@
+// pretty code
+
 const fs = require('fs');
 
 //  my own asynchronous function 
@@ -24,4 +26,5 @@ function onDone(data) {
 
 var a = azimsReadFile()
 console.log(a)
+// need to use .then
 a.then(onDone)
