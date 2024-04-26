@@ -63,3 +63,47 @@ function myOwnSetTimeOut(fn,duration){
 myOwnSetTimeOut(function(){
     console.log(" Hi There !!")
 },1000)
+
+
+//  promises 
+
+// function getPromises() {
+//     let p1 = new Promise();
+//     let p2 = new Promise();
+//     return [p1, p2]
+// }
+
+// const x = getPromises();
+// Promise.all()
+
+function fn(){
+    return "hello there";
+}
+
+let x = Promise.resolve(fn())
+
+x.then(function(value){
+    console.log(value)
+})
+
+// function myFunction() {
+//     const p =  new Promise(Function(Reolve) {
+//         //  not using and async
+//         resolve("my own value");
+//     })
+//     return p
+// }
+
+// where does the resolve function gets defined
+
+// const p = new Promise(function resolve){
+
+// }
+
+function sumOfSquares(a, cb){
+    cb(a*a);
+}
+
+sumOfSquares(2, function(result){
+    console.log(result);
+})
