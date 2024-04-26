@@ -30,7 +30,7 @@ console.log(a)
 // need to use .then
 a.then(onDone)
 
-//  prmosie class
+//  prmosie class 
 
 // var p = new Promise();
 
@@ -52,6 +52,3 @@ d.then(callback)
 // 1. Pending 
 // 2. resolved
 // 3. rejected
-
-
-
