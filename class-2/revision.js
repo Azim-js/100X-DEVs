@@ -107,3 +107,25 @@ function sumOfSquares(a, cb){
 sumOfSquares(2, function(result){
     console.log(result);
 })
+
+
+// complete promises
+
+// console.log("at the top 1")
+// function promisifiedTimeout() {
+//     console.log("function called 3")
+//     return new promisifiedTimeout(function(resolve){
+//         console.log("inside promise callback 4")
+//         setTimeout(function() {
+//             console.log("setTimeout called 5")
+//             resolve("done baby! I am burnt out.");
+//         },5000)
+//     })
+// }
+
+// console.log("in the midle2")
+
+// promisifiedTimeout().then(function(value){
+//     console.log("prmisified 6")
+//     console.log(value);
+// })
