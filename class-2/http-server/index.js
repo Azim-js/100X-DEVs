@@ -11,6 +11,8 @@ const bodyParser = require("body-parser");
 
 const app = express();
 
+// console.log(t)
+
 const port = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
@@ -24,8 +26,10 @@ app.get('/route-handler', function(req,res) {
 })
 
 app.get('/', function(req,res) {
-    console.log(req.body)
-    res.send("Hello World!");
+    console.log(req.headers.authorization)
+    setTimeout(function() {
+        res.status(401).send("hello world")
+    }, 1000)
 })
 
 app.listen(port, function() {
