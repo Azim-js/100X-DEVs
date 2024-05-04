@@ -10,7 +10,11 @@
 7. vi
 8. mv
 9. cp
-10 .nvm
-11. npm 
-12. node
+10. grep
+11. nvm
+12. npm 
+13. node
+14. git
 ```
+
+10. nvm (node version manager lets you isntall node in machine) 
