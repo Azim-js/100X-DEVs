@@ -88,6 +88,22 @@ The sed's subsitute command has the following structure:
 5. sed -n '3,/ERROR/ p' log.txt
 ```
 
+# AWK
+
+39. awk [OPTIONS] SCRIPT FILE ...
+
+How patterns are define: '(pattern) {action}'
+
+```
+1. awk '/ERROR/{print $0}' log.txt
+2. awk '{gsub(/ERROR/, "CRITICAL")}{print}' log.txt
+3. awk 'BEGIN {print "LOG SUMMARY\n----------"} {print} END {print "---------------\nEND OF LOG SUMMARY}' log.txt
+4. awk '{print $1,$2}' log.txt
+5. awk -F "," '{print $1, $2}' log.txt
+6. awk '{count[$2]++} END {print count["ERROR"]}' log.txt
+7. awk '{if ($1 >159571276) {print $0}}' log.txt
+
+```
 
 
 
