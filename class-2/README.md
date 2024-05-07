@@ -1,4 +1,4 @@
-# Bash and Tern=minal commands
+# Bash and Terminal commands
 
 ```
 1. pwd
@@ -82,7 +82,7 @@ The sed's subsitute command has the following structure:
 
 ```
 1. sed 's/ERROR/CRITICAL/' log.txt
-2. sed -ibackup 's/ERROR/CRITICAL/' log.txt
+2. sed -ibackup 's/ERROR/CRITICAL/' log.txt (creates a logbackup.txt)
 3. sed '3 s/ERROR/CRITICAL/' log.txt
 4. sed '3,5 s/ERROR/CRITICAL/' log.txt
 5. sed -n '3,/ERROR/ p' log.txt
