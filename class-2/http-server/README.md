@@ -18,9 +18,10 @@ consy app = express();
 app.get("/", function(req,res){
     const n = req.query.n;
     const ans = calculateSum(n)
-    res.send(ans);
+    res.send(ans.toString());
 })
 
 app.listen(3000);
 
 ```
+
