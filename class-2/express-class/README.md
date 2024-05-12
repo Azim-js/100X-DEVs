@@ -48,3 +48,26 @@ console.log(users[0]);
 ```
 
 
+
+# Http server for file
+
+```
+const express = require("express");
+const fs = require("fs");
+
+const app = express();
+
+// for widcard within that route "/:name"
+
+app.get("/files/:fileName", function(req, res){
+    const name = req.params.fileName;
+    console.log(name);
+    fs.readFile(name, "utf-8", function (err, data){
+        res.json({
+            data
+        });
+    })
+});
+
+app.listen(3000);
+```
