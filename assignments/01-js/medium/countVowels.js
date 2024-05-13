@@ -29,5 +29,5 @@ function countVowels(str) {
 }
 
 // countVowels("Azim");
-countVowels("Keep smiling, boo.");
+// countVowels("Keep smiling, boo.");
 module.exports = countVowels;
