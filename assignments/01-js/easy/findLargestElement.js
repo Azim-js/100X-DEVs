@@ -5,8 +5,18 @@
   - Output: 9
 */
 
+//  we can use Math.max(...numbers);
+// The spread syntax (...numbers) unpacks the numbers array into individual arguments for Math.max, allowing it to effectively compare all elements 
+
 function findLargestElement(numbers) {
-    
+   let largest = numbers[0];
+
+   for(let x of numbers){
+    if(largest < x){
+        largest = x;
+    }
+   }
+   return largest;
 }
 
 module.exports = findLargestElement;
