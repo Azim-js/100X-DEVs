@@ -78,4 +78,13 @@ Promises
 Async await
 
 
+# performance.now() vs Date()
 
+```
+performance.now() is relative to page load and more precise in orders of magnitude. Use cases include benchmarking and other cases where a high-resolution time is required such as media (gaming, audio, video, etc.)
+
+It should be noted that performance.now() is only available in newer browsers (including IE10+).
+
+Date.now() is relative to the Unix epoch (1970-01-01T00:00:00Z) and dependent on system clock. Use cases include same old date manipulation ever since the beginning of JavaScript.
+
+```
