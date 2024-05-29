@@ -71,7 +71,22 @@ app.get("/health-checkup", function(req,res){
         return;
     }
 
-    res.send("your heart is healthy");
+    res.send("your kidney is healthy");
 
 })
+```
+
+# DRY (Do Not repeat your self)
+
+- Create a function that fixs the DRY 
+
+example : 
+
+```
+function usernameValidator(username, password){
+    if(username != "azim" && password != "pass"{
+        return false;
+    })
+    return true;
+}
 ```
