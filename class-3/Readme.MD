@@ -90,3 +90,37 @@ function usernameValidator(username, password){
     return true;
 }
 ```
+
+# Why do you need input validation 
+
+- example
+
+```
+const express = require('express');
+
+const app = express();
+
+app.post("/health-checkup", function (req,res){
+    const kidneys = req.body.kidneys;
+    const kidneyLength = kidneys.length;
+
+    res.send("Your Kidney lenght is " + kidneyLength);
+});
+
+app.listen(3000);
+```
+
+# Global catches help you give the user a better error message
+
+```
+(`(err,req,res,next)`)
+```
+
+# Authentication & Zod
+
+- TypeScript-first schema validation with static type inference 
+
+    1. Installation ``` npm install zod ```
+    2. 
+
+
