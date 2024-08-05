@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Simple BE-App</title>
+        <link rel="stylesheet" href="style.css" type="text/css" />
+    </head>
+    <body>
+        <script>
+            // function getAnimalData() {
+            //         // alert("Hi there ");
+            //         // const response = fetch("https://fakerapi.it/api/v1/persons"); // by default fetch api hits GET method
+            //         // console.log(response); // promise pending as fetch is a async call
+            //         fetch("https://fakerapi.it/api/v1/persons")
+            //         .then(function(response){
+            //            response.json()
+            //            .then(function(finalData){
+            //            console.log(finalData)
+            //         })
+            //         })
+            // }
+            //  add await for async calls
+            
+            async function getAnimalData() {
+                const response = await fetch("https://fakerapi.it/api/v1/persons");
+                const finalData = await response.json()
+                console.log(finalData);
+            }
+        </script>
+        <button onclick="getAnimalData()" > Get animal data</button>
+    </body>
+</html>

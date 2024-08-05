@@ -121,6 +121,23 @@ app.listen(3000);
 - TypeScript-first schema validation with static type inference 
 
     1. Installation ``` npm install zod ```
-    2. 
+
+
+# Fetch, Authentication and  Databases  
+
+- The fetch API 
+
+1. Built Http server (get , post , delete, put reequests)
+
+2. How to send a request when a button is clicked ( fetch data from the backend )
+
+3. Until now sent requests via 
+    1. postman
+    2. Browser URL
+
+- There's a third way 
+
+    - html code -> http server
+
 
 
