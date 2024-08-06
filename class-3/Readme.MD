@@ -137,7 +137,63 @@ app.listen(3000);
 
 - There's a third way 
 
-    - html code -> http server
+    - html code -> http server - fetch api 
 
+# Authentication 
+
+- Project for today - 
+    let people sign up to your website only allow signed in users to see people( create a dummy people list )
+
+-  Restrict users only selected users will be to see the data 
+
+- Lets understand authentication 
+
+    1. SSO - login with google , fb etc ..
+    2. easy way is to create a username and password based on auth 
+
+
+# Lets understand some cryptography 
+
+1. Hashing
+2. Encryption 
+3. json web token 
+4. Local storage
+
+1. Hashing - 
+    real world example 
+    
+    - when sign up - stores in a backend 
+    - it get converts into hash passwords - a single input has the same hash 
+    - the hash passords gets stored in the be 
+    - the hash can never be decrypted 
+    - the be converts the hash and compares the stored hash 
+    - hashing is always a 1 way 
+
+2. Encryption 
+    - is always 2 ways (provided with a key)
+
+3. JSON web token (JWT)
+
+    - divided into 3 parts -> 
+    1. takes json input 
+    2. web use case
+    3. takes the input and creates a token 
+
+    input - output (however has a output can see the input - look at what the contents are)
+
+    Authorization - Bearer - JWT - JWT.io and paste 
+    and we can see the json data which was hashed 
+
+    - one complex object input into a jwt token - compress the data 
+    - verification which will be done a authorzier 
+    - jwt.encode -> jwt.verfiy(long text, password )
+
+4. Local Storage 
+
+    - A place in your browser where you can store some data usually things that are stored include - 
+        1. Authentication tokens 
+        2. User langauage preference 
+        3. User thene prefernece 
+        
 
 
