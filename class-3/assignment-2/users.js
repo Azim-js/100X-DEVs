@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const app = express()
 app.use(express.json());
 
-mongoose.connect("mongodb+srv://admin:IzcFIVm3hw8hIkCi@cluster0.ogogseb.mongodb.net/userappnew")
+mongoose.connect("mongodb+srv://admin:XXXXX@cluster0.ogogseb.mongodb.net/userappnew")
 
 // describe what the collection should be schema 
 
