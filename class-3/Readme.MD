@@ -223,3 +223,57 @@ Returns 403 status code if not
 
 
 npm registry - jsonwebtoken 
+
+# Databases
+
+     - Until now, we have been storing data in memory this is bad for a few resons - 
+
+    1. Data can't be dynamic, if you update in memory objects, the updates are lost if the process restarts
+
+    2. There are multiple servers in the real world 
+
+
+A simple Databases arch - 
+
+![alt text](image.png)
+
+There are varous types of databases 
+
+1. Graph DB's - niche use cases 
+2. Vector DB's - ml use cases 
+3. SQL DB's - full stack use cases (open source )
+4. NoSql DB's - for n projects 
+
+- NoSql DB - Mongo Db
+
+# MongoDB 
+
+MongoDB lets you create databases 
+In each DB, it lets you create tables (collections)
+In each table, it lets you dump JSON data
+It is schemaless
+it scales well and is a decent choice for most use cases 
+
+
+- create a db in mongodb  get a free instance 
+- get your mongodb connection URL 
+- Download MongoDB Compass and try to explore the DB 
+
+- How does the BE connect to the DB     
+    1. Express lets you create an HTTP server 
+    2. JSONwebtokens library lets you create jets
+    3. Mongoose lets you connect to your database
+
+# Assignment - 2 
+
+1. /signup
+2. /signin -> jwt 
+3. /users -> verify jwt and return the list of users 
+
+![alt text](image-1.png)
+
+
+
+
+
+
