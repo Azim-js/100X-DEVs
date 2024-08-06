@@ -190,10 +190,34 @@ app.listen(3000);
 
 4. Local Storage 
 
-    - A place in your browser where you can store some data usually things that are stored include - 
+    - A place in your browser where you can store some data usually things that are stored include -  (application on local storage)
         1. Authentication tokens 
         2. User langauage preference 
-        3. User thene prefernece 
-        
+        3. User theme prefernece 
 
+
+
+# Assignment 
+
+- Lets start by creating our assignment for today 
+    A website which has 2 endpoints - 
+
+POST /signin 
+
+    Body - {
+        username: string 
+        password: string 
+    }
+
+Returns a json web token with username encrypted 
+
+
+GET /users
+
+    Headers - 
+Authorization header
+
+Returns an array of all users if user is signed in (token is correct)
+
+Returns 403 status code if not 
 
