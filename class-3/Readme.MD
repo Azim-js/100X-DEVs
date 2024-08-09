@@ -273,6 +273,9 @@ it scales well and is a decent choice for most use cases
 ![alt text](image-1.png)
 
 
+# Authentication, JWTs and try/catch (using real world examples)
+
+
 
 
 
