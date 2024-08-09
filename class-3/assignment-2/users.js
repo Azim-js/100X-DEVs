@@ -27,7 +27,7 @@ app.post("/signup",function(req, res){
     // if(existingUser){
     //     return res.status(400).send("Username already exists");
     // }
-
+    // await User.create({name, email: username, password});
     const user= new User({ 
         name: name, 
         email: username,
